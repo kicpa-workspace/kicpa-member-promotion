@@ -3,23 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AT 상생협력 회원지원 프로그램 | 한국공인회계사회</title>
-  <!-- Social share / Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://kicpa-workspace.github.io/kicpa-member-promotion/" />
-  <meta property="og:title" content="AT 상생협력 회원지원 프로그램" />
-  <meta property="og:description" content="한국공인회계사회 회원 대상 PHAROS ERP · COMPAS 이용지원 프로그램" />
-  <meta property="og:image" content="https://kicpa-workspace.github.io/kicpa-member-promotion/assets/og-kicpa-finger.png" />
-  <meta property="og:image:secure_url" content="https://kicpa-workspace.github.io/kicpa-member-promotion/assets/og-kicpa-finger.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="한국공인회계사회와 핑거의 회원지원 프로그램" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AT 상생협력 회원지원 프로그램" />
-  <meta name="twitter:description" content="한국공인회계사회 회원 대상 PHAROS ERP · COMPAS 이용지원 프로그램" />
-  <meta name="twitter:image" content="https://kicpa-workspace.github.io/kicpa-member-promotion/assets/og-kicpa-finger.png" />
-
+  <title>회계·세무 업무 프로그램 회원 이용지원 | 한국공인회계사회</title>
 
   <link rel="stylesheet" as="style" crossorigin
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
@@ -117,57 +101,33 @@
     /* Hero 협력 CI */
     .ci-collab{
       margin:0 0 28px;
-      display:grid;
-      grid-template-columns:max-content max-content max-content;
-      align-items:center;
-      column-gap:18px;
-      min-height:52px;
-      justify-content:flex-start;
-    }
-    .ci-hero-kicpa,
-    .ci-hero-finger{
-      width:auto;
-      height:auto;
       display:flex;
       align-items:center;
-      justify-content:center;
+      gap:20px;
+      min-height:52px;
     }
-    .ci-hero-kicpa img{
-      width:auto;
-      height:46px;
-      object-fit:contain;
+    .ci-hero-kicpa{
+      width:205px;
+      height:52px;
     }
-    .ci-hero-finger img{
-      width:auto;
-      height:34px;
-      object-fit:contain;
+    .ci-hero-finger{
+      width:128px;
+      height:52px;
     }
-    .ci-hero-kicpa .ci-fallback{
-      width:182px;
-      height:46px;
-      font-size:13px;
-      background:rgba(255,255,255,.74);
-      border-color:rgba(112,123,145,.20);
-    }
+    .ci-hero-kicpa .ci-fallback,
     .ci-hero-finger .ci-fallback{
-      width:118px;
-      height:34px;
       font-size:13px;
       background:rgba(255,255,255,.74);
       border-color:rgba(112,123,145,.20);
     }
     .ci-x{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      width:16px;
       font-size:22px;
       line-height:1;
       font-weight:500;
       color:#9ba1aa;
     }
     .ci-collab-caption{
-      margin-top:-10px;
+      margin-top:-16px;
       margin-bottom:24px;
       color:#7f8791;
       font-size:13px;
@@ -275,14 +235,24 @@
     .hero-copy{position:relative;z-index:2}
     h1{
       margin:0;
-      font-size:60px;
-      line-height:1.05;
+      line-height:1.04;
       font-weight:800;
       letter-spacing:-.055em;
     }
-    .hero-accent{
+    .hero-title-main{
+      display:block;
+      color:#111318;
+      font-size:38px;
+      line-height:1.18;
+      letter-spacing:-.045em;
+      margin-bottom:8px;
+    }
+    .hero-title-accent{
+      display:block;
       color:var(--samsung-blue);
-      font-size:calc(1em - 2px);
+      font-size:60px;
+      line-height:1.02;
+      letter-spacing:-.06em;
     }
     .hero-desc{
       max-width:670px;
@@ -291,6 +261,11 @@
       font-size:19px;
       line-height:1.7;
     }
+    .hero-desc-gap{
+      display:block;
+      height:10px;
+    }
+    .desktop-break-space{display:none;}
     .hero-actions{
       display:flex;
       gap:16px;
@@ -321,6 +296,17 @@
       border:1px solid rgba(17,19,24,.06);
     }
     .btn-secondary:hover{background:#fff}
+    .btn-talent{
+      background:#fff;
+      color:#111318;
+      border:2px solid #2b3342;
+      box-shadow:none;
+    }
+    .btn-talent:hover{
+      background:#f8f9fb;
+      border-color:#111318;
+      transform:translateY(-1px);
+    }
 
     .text-link{
       display:inline-flex;
@@ -332,6 +318,8 @@
       padding:4px 0;
     }
     .text-link:hover{color:var(--samsung-blue-deep)}
+    .compas .card-bottom .text-link{color:var(--mint)}
+    .compas .card-bottom .text-link:hover{color:#0a956e}
     .arrow{
       font-size:20px;
       line-height:1;
@@ -394,6 +382,54 @@
       color:var(--sub);
       font-size:19px;
       line-height:1.7;
+    }
+
+    .recommend-section{
+      padding:18px 0 8px;
+    }
+    .recommend-wrap{
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+      padding:28px 4px;
+      display:grid;
+      grid-template-columns:240px 1fr;
+      gap:30px;
+      align-items:start;
+    }
+    .recommend-title{
+      margin:0;
+      font-size:24px;
+      line-height:1.35;
+      letter-spacing:-.04em;
+    }
+    .recommend-list{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px 28px;
+      color:#555d68;
+      font-size:16px;
+      line-height:1.6;
+    }
+    .recommend-list div{
+      position:relative;
+      padding-left:18px;
+    }
+    .recommend-list div::before{
+      content:"";
+      position:absolute;
+      left:0;
+      top:.72em;
+      width:6px;
+      height:6px;
+      border-radius:50%;
+      background:var(--samsung-blue);
+    }
+    .use-case{
+      margin:18px 2px 0;
+      color:#4f5661;
+      font-size:18px;
+      line-height:1.72;
+      font-weight:700;
     }
 
     .products-grid{
@@ -466,8 +502,8 @@
     .benefit-sub{
       margin-top:8px;
       color:#717782;
-      font-size:14px;
-      line-height:1.55;
+      font-size:16px;
+      line-height:1.65;
     }
 
     .feature-stack{
@@ -506,10 +542,10 @@
       color:#0d1117;
     }
     .feature-desc{
-      margin:2px 0 0;
+      margin:3px 0 0;
       color:#7b818c;
-      font-size:14px;
-      line-height:1.55;
+      font-size:16px;
+      line-height:1.65;
     }
     .spacer{flex:1}
     .card-bottom{
@@ -705,7 +741,8 @@
     }
     @media(max-width:960px){
       .hero-card{grid-template-columns:1fr;padding:50px 38px}
-      h1{font-size:50px}
+      .hero-title-main{font-size:34px}
+      .hero-title-accent{font-size:50px}
       .talent-card{grid-template-columns:1fr}
       .steps{grid-template-columns:1fr 1fr}
       .footer-grid{grid-template-columns:1fr}
@@ -716,20 +753,28 @@
     @media(max-width:600px){
       .wrap{width:min(100% - 28px,1180px)}
       .ci-top-kicpa{width:155px;height:30px}
-      .ci-collab{column-gap:12px}
-      .ci-hero-kicpa img{height:38px}
-      .ci-hero-finger img{height:28px}
-      .ci-hero-kicpa .ci-fallback{width:150px;height:38px}
-      .ci-hero-finger .ci-fallback{width:98px;height:28px}
-      .ci-x{width:12px;font-size:18px}
+      .ci-collab{gap:12px;flex-wrap:wrap}
+      .ci-hero-kicpa{width:160px;height:38px}
+      .ci-hero-finger{width:112px;height:38px}
       .hero{padding:62px 0 30px}
       .hero-card{padding:38px 24px;border-radius:30px}
-      h1{font-size:39px}
+      .hero-title-main{font-size:29px;margin-bottom:7px}
+      .hero-title-accent{font-size:39px}
       .hero-desc{font-size:17px}
+      .hero-desc-gap{display:none}
+      .desktop-br{display:none}
+      .desktop-break-space{display:inline}
       .hero-actions{gap:14px}
       section{padding:70px 0}
       .section-title{font-size:34px}
       .section-desc{font-size:17px}
+      .recommend-section{padding:8px 0 0}
+      .recommend-wrap{grid-template-columns:1fr;gap:16px;padding:24px 2px}
+      .recommend-title{font-size:22px}
+      .recommend-list{grid-template-columns:1fr;font-size:15px;gap:10px}
+      .use-case{font-size:15px}
+      .benefit-sub{font-size:14px;line-height:1.55}
+      .feature-desc{font-size:13px;line-height:1.55;margin:2px 0 0}
       .product-card{padding:24px}
       .product-top{flex-direction:column}
       .product-card h3{font-size:26px}
@@ -761,7 +806,7 @@
                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
           <span class="ci-fallback">KICPA CI</span>
         </div>
-        <span class="brand-sub">AT 상생협력 회원지원</span>
+        <span class="brand-sub">회계·세무 업무 프로그램 회원 이용지원</span>
       </div>
 
       <div class="nav">
@@ -798,14 +843,19 @@
             </div>
           </div>
 
-          <div class="ci-collab-caption">AT 자격사업 발전 및 교육·확산사업 공식 후원사</div>
+          <div class="ci-collab-caption">AT 자격사업 발전 및 교육·확산사업 공식 후원 협력</div>
 
-          <h1><span class="hero-accent">선택은 넓히고,</span><br>업무환경 전환의<br><span class="hero-accent">부담은 낮추고</span></h1>
+          <h1>
+            <span class="hero-title-main">회계·세무 업무 프로그램,</span>
+            <span class="hero-title-accent">선택의 폭을<br>넓혀보세요.</span>
+          </h1>
 
           <p class="hero-desc">
-            회원이 다양한 회계·세무 업무환경을 직접 경험하고 선택할 수 있도록,
-            본회의 「AT 자격사업 발전 및 교육·확산사업」 공식 후원사인 ㈜핑거가
-            본회 회원을 대상으로 제공하는 <strong>PHAROS ERP·COMPAS 이용지원 혜택</strong>을 안내합니다.
+            회원의 회계·세무 업무환경 개선을 지원하기 위해,<br class="desktop-br"><span class="desktop-break-space"> </span>
+            본회 공식 후원사 ㈜핑거가 본회 회원에게 제공하는 PHAROS ERP · COMPAS 이용지원 혜택을 안내드립니다.<br>
+            <span class="hero-desc-gap" aria-hidden="true"></span>
+            회원 전용 이용지원 기간 동안 직접 사용해보고,<br class="desktop-br"><span class="desktop-break-space"> </span>
+            업무 적합성과 구성원의 사용 편의성을 확인한 뒤 선택할 수 있습니다.
           </p>
 
           <div class="hero-actions">
@@ -818,28 +868,42 @@
 
         <div class="hero-visual">
           <div class="hero-chip pharos">
-            <small>회원 기본 혜택</small>
-            <strong>PHAROS ERP<br>6개월 지원</strong>
+            <small>회계·세무 업무용 ERP</small>
+            <strong>PHAROS<br>6개월 무료</strong>
           </div>
           <div class="hero-chip compas">
-            <small>회원 기본 혜택</small>
-            <strong>COMPAS<br>1년 지원</strong>
+            <small>수임처 통합관리 플랫폼</small>
+            <strong>COMPAS<br>1년 무료</strong>
           </div>
           <div class="hero-chip extra">
-            <small>AT 인재양성·채용연계 추가지원</small>
-            <strong>PHAROS ERP 최대 1년</strong>
+            <small>인재양성 사업 참여 회원 추가혜택</small>
+            <strong>PHAROS 최대 1년 이용</strong>
           </div>
         </div>
       </div>
     </div>
   </header>
 
+  <section class="recommend-section" aria-labelledby="recommend-title">
+    <div class="wrap">
+      <div class="recommend-wrap">
+        <h2 id="recommend-title" class="recommend-title">이런 회원께 추천합니다</h2>
+        <div class="recommend-list">
+          <div>새로운 회계·세무 프로그램을 비교해보고 싶은 회원</div>
+          <div>전표·급여·증빙 업무를 더 효율화하고 싶은 회원</div>
+          <div>수임처 현황과 세무일정을 체계적으로 관리하고 싶은 회원</div>
+          <div>인재양성 사업 참여와 함께 추가혜택도 활용하고 싶은 회원</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="benefits">
     <div class="wrap">
       <div class="section-head">
-        <h2 class="section-title">필요한 서비스만 골라서, 부담 없이 시작하세요.</h2>
+        <h2 class="section-title">내 업무에 맞는 서비스를 직접 확인해 보세요.</h2>
         <p class="section-desc">
-          PHAROS와 COMPAS는 필요한 서비스에 따라 개별 또는 동시에 신청할 수 있습니다. 회원지원 기간 동안 직접 이용해 보고, 업무환경에 맞는 서비스를 선택해 보세요.
+          PHAROS와 COMPAS는 개별 또는 동시에 신청할 수 있습니다. 이용지원 기간 동안 실제 업무에 적용해보고, 상세 기능과 이용 조건은 ㈜핑거 공식 안내에서 확인해 주세요.
         </p>
       </div>
 
@@ -852,6 +916,8 @@
             </div>
             <div class="provided-pill">㈜핑거 제공</div>
           </div>
+
+          <p class="use-case">전표·증빙·급여 등 회계·세무 실무를 하나의 ERP로 처리하고 싶다면</p>
 
           <div class="benefit-panel">
             <div class="benefit-kicker">회원 기본 지원 혜택</div>
@@ -879,7 +945,7 @@
             <div class="feature-item">
               <div class="check">✓</div>
               <div>
-                <div class="feature-title">인사·급여 &amp; AT 자격시험 공식 실무프로그램</div>
+                <div class="feature-title">인사·급여 &amp; AT 자격시험 공식 표준</div>
                 <div class="feature-desc">원클릭 급여대장 작성 및 실무 시험 표준 호환성 완벽 지원</div>
               </div>
             </div>
@@ -903,6 +969,8 @@
             </div>
             <div class="provided-pill">㈜핑거 제공</div>
           </div>
+
+          <p class="use-case">수임처별 진행상황, 증빙, 세무 일정을 한눈에 관리하고 싶다면</p>
 
           <div class="benefit-panel">
             <div class="benefit-kicker">회원 기본 지원 혜택</div>
@@ -955,10 +1023,10 @@
         <div>
           <h2 class="talent-title">회계·세무 인재채용에 함께하는 회원에게 추가 지원합니다.</h2>
           <p class="talent-copy">
-            회계·세무 인재양성·채용연계 사업을 통해 인재를 채용한 회원에게는 기본 회원특전에 더해 <strong>PHAROS ERP 이용기간을 6개월 추가 지원합니다.</strong> 세부 대상과 참여방법은 인재양성 사업 안내페이지에서 확인해 주세요.
+            회계·세무 인재양성·채용연계 사업을 통해 인재를 채용한 회원에게는 기본 회원특전에 더해 PHAROS ERP 이용기간을 6개월 추가 지원합니다. 세부 대상과 참여방법은 인재양성 사업 안내페이지에서 확인해 주세요.
           </p>
           <div class="hero-actions" style="justify-content:flex-start">
-            <a class="btn btn-secondary"
+            <a class="btn btn-talent"
                href="https://kicpa-talent-2026.data-analyti-6717.chatgpt.site/"
                target="_blank" rel="noopener noreferrer">인재양성 사업 자세히 보기</a>
           </div>
@@ -985,23 +1053,23 @@
         <div class="steps">
           <div class="step">
             <div class="step-num">1</div>
-            <h3>구글폼 신청서 접수</h3>
-            <p>회원 정보와 함께 희망 서비스(파로스/컴패스)를 선택하여 신청서를 제출합니다.</p>
+            <h3>혜택 신청서 제출</h3>
+            <p>회원 정보와 함께 희망 서비스(PHAROS/COMPAS)를 선택하여 신청서를 제출합니다.</p>
           </div>
           <div class="step">
             <div class="step-num">2</div>
-            <h3>프로모션 코드 수신</h3>
-            <p>회원 정보 확인 완료 후, 신청서에 기재한 이메일로 전용 코드를 발송드립니다.</p>
+            <h3>회원 여부 확인</h3>
+            <p>본회에서 신청정보를 확인하고 회원 여부 및 지원대상을 확인합니다.</p>
           </div>
           <div class="step">
             <div class="step-num">3</div>
-            <h3>서비스 회원가입</h3>
-            <p>신청하신 파로스 또는 컴패스 공식 홈페이지에 접속하여 계정을 생성합니다.</p>
+            <h3>이메일로 프로모션 코드 수신</h3>
+            <p>회원 확인 완료 후, 신청서에 기재한 이메일로 전용 프로모션 코드를 발송드립니다.</p>
           </div>
           <div class="step">
             <div class="step-num">4</div>
-            <h3>CMS 팝업 코드 등록</h3>
-            <p>최초 로그인 시 표시되는 CMS 등록 팝업창에 발급받은 코드를 입력하면 즉시 적용됩니다.</p>
+            <h3>서비스 가입 후 프로모션 코드 등록</h3>
+            <p>신청한 서비스에 가입한 뒤 안내된 방법에 따라 프로모션 코드를 등록하면 혜택이 적용됩니다.</p>
           </div>
         </div>
 
@@ -1015,8 +1083,8 @@
   <section class="cta-section">
     <div class="wrap">
       <div class="cta-card">
-        <h2>회원 전용 이용지원 혜택을 확인해 보세요.</h2>
-        <p>신청서를 제출하면 회원 여부 확인 후 PHAROS·COMPAS 이용을 위한 전용 프로모션 코드와 이용방법을 안내해 드립니다.</p>
+        <h2>PHAROS 6개월, COMPAS 1년 무료 이용 혜택</h2>
+        <p>신청 후 회원 여부 확인을 거쳐 전용 프로모션 코드를 이메일로 보내드립니다.<br>지원 기간 동안 직접 사용해보고, 업무에 맞는 서비스를 선택해 보세요.</p>
         <a class="btn"
            href="https://forms.gle/ZFWiFbNj9Cwg6bht9"
            target="_blank" rel="noopener noreferrer">혜택 신청하기</a>
@@ -1048,7 +1116,7 @@
         <div>
           <div class="footer-title">회원지원 프로그램 안내</div>
           <div>
-            본 프로그램은 「AT 자격사업 발전 및 교육·확산사업」 공식 후원사인 ㈜핑거가 본회 회원을 대상으로 제공하는 회원지원 프로그램입니다.
+            본 프로그램은 「AT 자격사업 발전 및 교육·확산사업」 후원 협력에 따른 회원지원 프로그램입니다.
             PHAROS와 COMPAS의 이용 혜택 및 서비스는 ㈜핑거가 제공하며,
             한국공인회계사회는 회원 대상 프로그램 안내 및 회원 여부 확인을 지원합니다.
             서비스 이용 여부는 회원의 자율적인 판단에 따라 결정됩니다.
