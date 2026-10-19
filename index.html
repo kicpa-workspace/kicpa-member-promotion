@@ -273,6 +273,14 @@
       flex-wrap:wrap;
       margin-top:30px;
     }
+    .hero-action-note{
+      margin:12px 0 0;
+      color:#6f7680;
+      font-size:14px;
+      line-height:1.55;
+      font-weight:700;
+      white-space:nowrap;
+    }
     .btn{
       display:inline-flex;
       align-items:center;
@@ -571,30 +579,30 @@
     .talent-card{
       background:linear-gradient(135deg,#eff5ff,#f5f1ff 72%,#eefbf7);
       border-radius:40px;
-      padding:52px 56px;
+      padding:42px 48px;
       display:grid;
       grid-template-columns:1.35fr .65fr;
       gap:28px;
       align-items:center;
-      box-shadow:var(--shadow);
+      box-shadow:0 10px 28px rgba(31,45,80,.07);
     }
     .talent-title{
       margin:0;
-      font-size:40px;
+      font-size:34px;
       line-height:1.22;
       letter-spacing:-.05em;
     }
     .talent-copy{
       margin:16px 0 0;
       color:var(--sub);
-      font-size:19px;
+      font-size:17px;
       line-height:1.7;
     }
     .talent-result{
       background:rgba(255,255,255,.78);
       backdrop-filter:blur(14px);
       border-radius:28px;
-      padding:28px;
+      padding:22px;
       text-align:center;
       border:1px solid rgba(255,255,255,.9);
     }
@@ -606,7 +614,7 @@
     }
     .talent-result strong{
       display:block;
-      font-size:29px;
+      font-size:25px;
       line-height:1.3;
       letter-spacing:-.04em;
     }
@@ -761,6 +769,7 @@
       .hero-title-main{font-size:29px;margin-bottom:7px}
       .hero-title-accent{font-size:39px}
       .hero-desc{font-size:17px}
+      .hero-action-note{font-size:13px;white-space:normal}
       .hero-desc-gap{display:none}
       .desktop-br{display:none}
       .desktop-break-space{display:inline}
@@ -781,9 +790,9 @@
       .benefit-main{font-size:24px}
       .feature-desc{font-size:13px}
       .card-bottom{flex-direction:column;align-items:flex-start}
-      .talent-card{padding:36px 24px;border-radius:30px}
-      .talent-title{font-size:30px}
-      .talent-copy{font-size:17px}
+      .talent-card{padding:32px 24px;border-radius:30px}
+      .talent-title{font-size:28px}
+      .talent-copy{font-size:16px}
       .steps{grid-template-columns:1fr}
       .process-wrap{padding:20px}
       .step h3{font-size:18px}
@@ -851,11 +860,8 @@
           </h1>
 
           <p class="hero-desc">
-            회원의 회계·세무 업무환경 개선을 지원하기 위해,<br class="desktop-br"><span class="desktop-break-space"> </span>
-            본회 공식 후원사 ㈜핑거가 본회 회원에게 제공하는 PHAROS ERP · COMPAS 이용지원 혜택을 안내드립니다.<br>
-            <span class="hero-desc-gap" aria-hidden="true"></span>
-            회원 전용 이용지원 기간 동안 직접 사용해보고,<br class="desktop-br"><span class="desktop-break-space"> </span>
-            업무 적합성과 구성원의 사용 편의성을 확인한 뒤 선택할 수 있습니다.
+            현재 업무환경에 불편이 있어도 새로운 프로그램으로의 전환은 쉽게 결정하기 어렵습니다.<br>
+            회원 전용 이용지원 기간 동안 먼저 사용해보고, 직원들의 적응도와 실제 업무 적합성을 확인한 뒤 선택해 보세요.
           </p>
 
           <div class="hero-actions">
@@ -864,6 +870,7 @@
                target="_blank" rel="noopener noreferrer">회원 혜택 신청하기</a>
             <a class="text-link" href="#benefits">지원내용 보기 <span class="arrow">›</span></a>
           </div>
+          <p class="hero-action-note">본회 공식 후원사 ㈜핑거가 본회 회원에게 제공하는 PHAROS ERP · COMPAS 이용지원 혜택을 안내드립니다.</p>
         </div>
 
         <div class="hero-visual">
@@ -887,12 +894,12 @@
   <section class="recommend-section" aria-labelledby="recommend-title">
     <div class="wrap">
       <div class="recommend-wrap">
-        <h2 id="recommend-title" class="recommend-title">이런 회원께 추천합니다</h2>
+        <h2 id="recommend-title" class="recommend-title">이런 고민이 있다면 먼저 써보세요</h2>
         <div class="recommend-list">
-          <div>새로운 회계·세무 프로그램을 비교해보고 싶은 회원</div>
-          <div>전표·급여·증빙 업무를 더 효율화하고 싶은 회원</div>
-          <div>수임처 현황과 세무일정을 체계적으로 관리하고 싶은 회원</div>
-          <div>인재양성 사업 참여와 함께 추가혜택도 활용하고 싶은 회원</div>
+          <div>개업 초기 업무 프로그램 구축비와 정기 구독료 부담을 줄이고 싶은 회원</div>
+          <div>현재 사용하는 업무 프로그램에 불편이 있지만 전환이 망설여지는 회원</div>
+          <div>직원들이 새로운 프로그램에 잘 적응할 수 있을지 걱정되는 회원</div>
+          <div>실제 업무에서 충분히 사용해보고 우리 사무실에 맞는 프로그램을 선택하고 싶은 회원</div>
         </div>
       </div>
     </div>
@@ -1074,7 +1081,8 @@
         </div>
 
         <div class="process-note">
-          💡 <strong>안내:</strong> 프로모션 코드는 이메일로 개별 발송되므로 신청서 작성 시 이메일 주소를 정확히 기재해 주시기 바랍니다.
+          💡 <strong>안내:</strong> 프로모션 코드는 이메일로 개별 발송되므로 신청서 작성 시 이메일 주소를 정확히 기재해 주시기 바랍니다.<br>
+          이용지원 신청만으로 현재 사용 중인 업무 프로그램을 변경할 필요는 없습니다.
         </div>
       </div>
     </div>
@@ -1083,8 +1091,8 @@
   <section class="cta-section">
     <div class="wrap">
       <div class="cta-card">
-        <h2>PHAROS 6개월, COMPAS 1년 무료 이용 혜택</h2>
-        <p>신청 후 회원 여부 확인을 거쳐 전용 프로모션 코드를 이메일로 보내드립니다.<br>지원 기간 동안 직접 사용해보고, 업무에 맞는 서비스를 선택해 보세요.</p>
+        <h2>바꾸기 전에, 우리 사무실에 맞는지 먼저 확인해 보세요.</h2>
+        <p>PHAROS ERP 6개월 · COMPAS 1년의 이용지원 기간 동안<br>직원들과 실제 업무에서 사용해보고 선택할 수 있습니다.</p>
         <a class="btn"
            href="https://forms.gle/ZFWiFbNj9Cwg6bht9"
            target="_blank" rel="noopener noreferrer">혜택 신청하기</a>
